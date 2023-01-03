@@ -58,6 +58,7 @@ section .cards .text-card {
     background: #2696E9;
     margin: 20px;
     padding: 20px;
+    cursor: pointer;
 }
 
 section .cards .text-card h3 {
@@ -79,4 +80,16 @@ section .cards .text-card h3 {
     section .container {
         margin: 100px 0;
     }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }
